@@ -1,0 +1,42 @@
+.header{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(34, 36, 43);
+}
+.monkey{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.d{
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    background-color: rgba(185, 185, 185, 0);
+}
+
+.active-class{
+    color: aqua;
+    text-decoration: none;
+}
+.notactive-class{
+    color: rgb(255, 252, 252);
+    text-decoration: none;
+}
+.logo{
+    width: 150px;
+    height: 50px;
+}
+.e{
+    margin-right: 30px;
+}
+@media screen and (min-width:350px) and (max-width:769px) {
+    .header{
+        flex-direction: column;
+    }
+    .monkey{
+        flex-direction: column;
+    }
+}

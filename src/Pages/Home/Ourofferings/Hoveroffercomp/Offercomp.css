@@ -1,0 +1,49 @@
+.offercomp{
+    background-image: url(../offeringsimg/offerings-gridlines.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    width: 80%;
+    margin: auto;
+    position: absolute;
+    top: 900px;
+    left: 130px;
+}
+.offercompchild{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.offercompchilditem{
+    margin: 20px;
+}
+.offercompchild1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.offercompchild1item{
+    width: 450px;
+    margin: 10px;
+}
+.offerbtn{
+    background-color: aqua;
+    border: none;
+    color: white;
+    padding: 10px;
+    font-size: medium;
+    cursor: pointer;
+    border-radius: 25px;
+}
+.closebtn{
+    height: fit-content;
+    color: white;
+    background-color: aqua;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 10px;
+    position: relative;
+    bottom: 15px;
+    left: 15px;
+}

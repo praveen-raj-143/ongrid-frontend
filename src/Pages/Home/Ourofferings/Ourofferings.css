@@ -1,0 +1,42 @@
+.offertxt{
+    text-align: center;
+}
+.txtoffer{
+    margin: 50px;
+}
+.hrline{
+    width: 30px;
+    font-weight: bold;
+    background-color: aqua;
+}
+.offerbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.offerchild{
+    width: 350px;
+    height: 450px;
+    margin: 5px;
+    cursor: pointer;
+}
+.offerchildimg{
+    width: 350px;
+    height: 450px;
+    
+    z-index: -1;
+}
+.offerchildtext{
+    position: relative;
+    bottom: 300px;
+    text-align: center;
+    color: white;
+    font-size: 26px;
+    padding: 0px 20px 0px 20px;
+}
+@media screen and (min-width:350px) and (max-width:769px){
+    .offerbox{
+        flex-direction: column;
+        margin: auto;
+    }
+}

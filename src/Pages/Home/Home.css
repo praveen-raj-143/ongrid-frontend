@@ -1,0 +1,15 @@
+.btnstarted{
+    width: fit-content;
+    margin: auto;
+}
+.btnstar1{
+    background-color: aqua;
+    border: none;
+    color: white;
+    padding: 10px;
+    font-size: larger;
+    cursor: pointer;
+}
+.btnstar1:hover{
+    background-color: rgb(34, 36, 43);
+}

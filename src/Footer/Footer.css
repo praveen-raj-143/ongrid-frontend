@@ -1,0 +1,21 @@
+.foot{
+    background-color: rgb(34, 36, 43);
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+.footerbox{
+    width: 50%;
+    margin: 10px;
+}
+.footerfooot{
+    color: white;
+}
+@media (max-width:769px){
+    .footer{
+        flex-direction: column;
+        margin: auto;
+    }
+}
