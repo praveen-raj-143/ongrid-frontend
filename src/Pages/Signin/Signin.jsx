@@ -18,9 +18,12 @@ const Signin = () => {
     // result = await result.json()
     // console.log(result)
     .then(res=>res.json())
-    .then(data=>{
+    .then(data=>{ 
       if(data.status==="ok"){
         alert("login successfully")
+        window.location.href = "./bookademo"
+      }else{
+        alert("failed to login invalid credentails")
       }
     })
   }

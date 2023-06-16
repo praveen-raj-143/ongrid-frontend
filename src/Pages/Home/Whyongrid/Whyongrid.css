@@ -1,24 +1,21 @@
-.whyongrid{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto auto;
+.firstgrid{
+    display: flex;
+    flex-direction: row;
     justify-content: center;
-    height: 750px;
 }
 .ongrid{
     margin: 5px;
+    width: 375px;
+    height: 225px;
 }
 .ongrid1{
     background-color: rgb(39, 41, 49);
     color: white;
-    text-align: start;
-    width: 375px;
-    height: 225px;
+    text-align: start; 
+    
 }
 .ongrid2{
     background-color: aqua;
-    width: 375px;
-    height: 225px;
     color: white;
     text-align: start;
     font-size: small;
@@ -27,49 +24,70 @@
     width: 375px;
     height: 225px;
 }
-.ongrid4{
+.secondgrid{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 86%;
+}
+.griditem{
+    height: 450px;
+    margin: 5px;
+}
+.grid{
+    display: flex;
+    flex-direction: column;
+}
+.gridchild{
     width: 300px;
     height: 225px;
+    margin: 5px;
+}
+.gridchildimg{
+    width: 300px;
+    height: 225px;
+}
+.childitem{
     background-color: aqua;
     color: white;
     text-align: start;
     font-size: small;
 }
-.ongrid5{
-    grid-row: 2/4;
-    grid-column: 2/3;
-    width: 375px;
-    height: 460px;
-    position: relative;
-    right: 37px;
+.lastchild{
+    margin: 5px;
 }
-.ongrid6{
-    position: relative;
-    right: 74px;
-    height: 170px;
-    width: 450px;
+.driver{
+    width: 375px;
+    height: 450px;
+}
+.trio{
+    display: flex;
+    flex-direction: column;
+}
+.lastitem{
     background-color: rgb(39, 41, 49);
     color: white;
     text-align: start;
     font-size: small;
 }
-.ongrid8{
-    width: 175px;
-    height: 280px;
-    position: relative;
-    left: 486px;
-    bottom: 173px;
+.grandchild{
+    display: flex;
+    flex-direction: row;
 }
-.ongrid7{
-    position: relative;
-    right: 74px;
-    bottom: 55px;
-    width: 265px;
-    height: 280px;
+
+.childgrand{
     background-color: aqua;
     color: white;
     text-align: start;
     font-size: small;
+    margin: 5px;
+}
+.grandcleaner{
+    background-color: white;
+}
+.cleaner{
+    width: 175px;
+    height: 280px;
 }
 .whytext{
     text-align: center;
@@ -90,25 +108,45 @@
     top: 20px;
 }
 @media screen and (min-width:350px) and (max-width:769px){
-    .whyongrid{
-        display: flex;
-        flex-direction: column;
-        margin: auto;
+    .firstgrid{
+        flex-direction: row;
+        flex-wrap: wrap;
     }
-    .ongrid5{
-        position: relative;
-        right: 0px;
+    .ongrid{
+        width: fit-content;
     }
-    .ongrid6{
-        position: relative;
-        right: 0px;
+    .ongrid1{
+        width: 100%;
     }
-    .ongrid7{
-        position: relative;
-        right: 0px;
+    .ongrid2{
+        width: 48%;
     }
-    .ongrid8{
-        position: relative;
-        left: 0px;
+    .ongrid3{
+        width: fit-content;
+    }
+    .secondgrid{
+        flex-direction: column-reverse;
+    }
+    .grid{
+        flex-direction: row;
+        height: fit-content;
+    }
+    .gridchild{
+        width: 48%;
+    }
+    .gridchildimg{
+        width: 100%;
+    }
+    .driver{
+        display: none;
+    }
+    .childgrand{
+        width: 48%;
+    }
+    .cleaner{
+        width: 100%;
+    }
+    .grandchild{
+        height: fit-content;
     }
 }

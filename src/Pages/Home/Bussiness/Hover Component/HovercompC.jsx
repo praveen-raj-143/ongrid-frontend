@@ -1,14 +1,14 @@
 import React from 'react'
 import './Hovercomp.css'
 
-const Hovercomp = (props) => {
+const HovercompC = (props) => {
 
-  return (props.hide) ? (
+  return (props.zoro) ? (
     <div className='hovercontainer'>
-            <button onClick={()=>props.setHide(false)}  className='exitbtn'>x</button>
+            <button onClick={()=>props.setZoro(false)}  className='exitbtn'>x</button>
         <div className='hovertextbox'>
-            <h1>Education/EdTech</h1>
-            <p>With the rise in demand, organizations in the Education and EdTech sector are on a hiring spree. The primary users of your service or platform are students, and their safety and learning outcomes are of paramount importance. BGV thus ensures the quality of new hires - tutors, administrative staff, or sales staff, thus helping towards a productive and safe learning environment.</p>
+            <h1>Transportation, Logistics, eCommerce</h1>
+            <p>With the adoption of high-technology in the supply chain sector, the industry has involuntarily become a massive driver of change, especially in developing economies. With delivery boys and warehouse staff handling high-value inventory, engaging with end customers at their doorsteps, or ferrying passengers, having an accountable workforce is not just desirable, but also necessary.</p>
         </div>
         
         <div className='hoverimgbox'>
@@ -16,7 +16,7 @@ const Hovercomp = (props) => {
                 <div className='hoverimgbox1child'><img src="https://ongrid.in/images/home/leverage.png" alt="not found" /></div>
                 <div className='hoverimgbox1child'>
                     <p><b>Who to verify:</b></p>
-                    <p>Teachers and Tutors, administrative staff, field sales staff, other employees</p>
+                    <p>Drivers, delivery boys, warehouse staff, field executives, supervisors, distribution center workforce, other employees</p>
                 </div>
             </div>
             <div className='hoverimgbox1'>
@@ -30,8 +30,9 @@ const Hovercomp = (props) => {
                         <li>Address verification</li>
                         <li>Criminal and court record verification</li>
                         <li>Prior employment verification</li>
-                        <li>Highest education verification</li>
-                        <li>eLockr reference check (for field sales staff)</li>
+                        <li>Highest education verification (for the white-collar workforce)</li>
+                        <li>eLockr reference check (for the field, warehouse, and distribution center staff)</li>
+                        <li>Traffic violation check (for staff directly involved in transportation)</li>
                     </ul>
                 </div>
             </div>
@@ -41,4 +42,4 @@ const Hovercomp = (props) => {
   ) : "" ;
 }
 
-export default Hovercomp
+export default HovercompC

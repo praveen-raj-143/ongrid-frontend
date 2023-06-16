@@ -19,7 +19,14 @@ const Siginup = () => {
       }
     })
     .then(res=>res.json())
-    .then(data=>console.log(data))
+    .then(data=>{
+      if(data.status==="ok"){
+        alert("signedUP successfully")
+        window.location.href = "./signin"
+      }else{
+        alert("invalid credentails please try again")
+      }
+    })
   }
   return (
     <div className='b'>

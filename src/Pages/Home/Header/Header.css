@@ -51,7 +51,11 @@
     background-color: rgb(34, 36, 43);
 }
 @media screen and (min-width:350px) and (max-width:769px){
-    .gridimg{
-        height: auto;
+    .headimg{
+        height: 68vh;
+    }
+    .headtext{
+        position: relative;
+    top: -500px;
     }
 }

@@ -1,0 +1,39 @@
+.blogmainhead{
+    font-size: 45px;
+    border-bottom: 6px solid black;
+}
+.blogmainhead:hover{
+    color: orangered;
+}
+.blogcontainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-bottom: 6px solid black;
+}
+.blogcontaineritem{
+    width: 300px;
+    height: fit-content;
+    padding: 30px;
+}
+.blogcontaineritem:hover{
+    background-color: orangered;
+    color: white;
+}
+.blogcontainerimg{
+    width: 100%;
+}
+
+.texthover:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.blogfoottext:hover{
+    color: orangered;
+    text-decoration: underline;
+}
+.blogmain{
+    width: 90%;
+    margin: auto;
+}

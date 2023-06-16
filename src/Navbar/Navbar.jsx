@@ -15,7 +15,7 @@ const Navbar = () => {
             <button className='d'><NavLink to='/faq' className={({isActive})=>(isActive ? 'active-class' : 'notactive-class')}>FAQs</NavLink></button>
         </div>
         <div className='monkey'>
-            <button className='d'><NavLink to='/bookademo' className={({isActive})=>(isActive ? 'active-class' : 'notactive-class')}>Book a Demo</NavLink></button>
+            <button className='d '><NavLink to='/bookademo' id='db' className={({isActive})=>(isActive ? 'active-class' : 'notactive-class')}>Book a Demo</NavLink></button>
             <button className='d e'><NavLink to='/signin' className={({isActive})=>(isActive ? 'active-class' : 'notactive-class')}>Sign-in</NavLink></button>
         </div>
     </div>

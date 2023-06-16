@@ -1,4 +1,4 @@
-.offercomp{
+.compc{
     background-image: url(https://ongrid.in/images/home/offerings-onGrid.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -8,7 +8,7 @@
     margin: auto;
     position: relative;
     bottom: 460px;
-    animation: ouroffer;
+    animation: ourofferC;
     animation-duration: 1s;
 }
 .offercompchild{
@@ -39,7 +39,7 @@
     border-radius: 25px;
 }
 .closebtn{
-    
+    height: fit-content;
     color: white;
     background-color: aqua;
     border: none;
@@ -50,9 +50,9 @@
     bottom: 15px;
     left: 15px;
 }
-@keyframes ouroffer {
+@keyframes ourofferC {
     0%{
-        transform: translateX(-35%) scale(0);
+        transform: translateX(35%) scale(0);
         opacity: 0;
     }
     100%{
@@ -61,8 +61,8 @@
     }
 }
 @media screen and (min-width:350px) and (max-width:769px){
-    .offercomp{
+    .compc{
         position: relative;
-    bottom: 700px;
+    bottom: 600px;
     }
 }

@@ -9,10 +9,29 @@
     color: white;
     font-size: xx-large;
 }
-.faqheadertext{
-    padding-top: 200px;
-}
+
 .faqinpt{
     width: 90%;
     margin: auto;
+}
+.faqtexthead{
+    font-size: large;
+}
+.faqtextbox{
+    width: 62%;
+    height: fit-content;
+    overflow: hidden;
+    transition: height 2s ease;
+    animation-name: faqbody;
+    animation-duration: 2s;
+}
+
+@keyframes faqbody {
+    from{
+       transform: rotateX('90deg') scale(0);
+    }
+    to{
+        
+        transform:rotateX('0deg') scale(1);
+    }
 }

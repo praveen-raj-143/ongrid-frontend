@@ -1,14 +1,14 @@
 import React from 'react'
 import './Hovercomp.css'
 
-const Hovercomp = (props) => {
+const HovercompF = (props) => {
 
-  return (props.hide) ? (
-    <div className='hovercontainer'>
-            <button onClick={()=>props.setHide(false)}  className='exitbtn'>x</button>
+  return (props.choper) ? (
+    <div className='hovercontainer compf'>
+            <button onClick={()=>props.setChoper(false)}  className='exitbtn'>x</button>
         <div className='hovertextbox'>
-            <h1>Education/EdTech</h1>
-            <p>With the rise in demand, organizations in the Education and EdTech sector are on a hiring spree. The primary users of your service or platform are students, and their safety and learning outcomes are of paramount importance. BGV thus ensures the quality of new hires - tutors, administrative staff, or sales staff, thus helping towards a productive and safe learning environment.</p>
+            <h1>Manufacturing</h1>
+            <p>In addition to the compliances required to run a manufacturing setup, the sector has always been vulnerable to falling prey to incidents of destructive herd mentality. Therefore, it becomes critical to mitigate the risk through the BGV of the workforce, especially those working in factories, plants, and production lines.</p>
         </div>
         
         <div className='hoverimgbox'>
@@ -16,7 +16,7 @@ const Hovercomp = (props) => {
                 <div className='hoverimgbox1child'><img src="https://ongrid.in/images/home/leverage.png" alt="not found" /></div>
                 <div className='hoverimgbox1child'>
                     <p><b>Who to verify:</b></p>
-                    <p>Teachers and Tutors, administrative staff, field sales staff, other employees</p>
+                    <p>Assembly line workforce (permanent and contractual), shop floor executives, other workers in factories and plants, corporate office employees</p>
                 </div>
             </div>
             <div className='hoverimgbox1'>
@@ -29,9 +29,10 @@ const Hovercomp = (props) => {
                         <li>ID verification</li>
                         <li>Address verification</li>
                         <li>Criminal and court record verification</li>
+                        <li>Police verification</li>
                         <li>Prior employment verification</li>
-                        <li>Highest education verification</li>
-                        <li>eLockr reference check (for field sales staff)</li>
+                        <li>Highest education verification (for white-collar workforce)</li>
+                        <li>eLockr reference check </li>
                     </ul>
                 </div>
             </div>
@@ -41,4 +42,4 @@ const Hovercomp = (props) => {
   ) : "" ;
 }
 
-export default Hovercomp
+export default HovercompF

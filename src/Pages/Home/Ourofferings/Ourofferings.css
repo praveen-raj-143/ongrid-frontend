@@ -1,3 +1,6 @@
+.ourofferingmain{
+    height: 715;
+}
 .offertxt{
     text-align: center;
 }
@@ -29,6 +32,8 @@
 .offerchildtext{
     position: relative;
     bottom: 300px;
+    
+    align-items: center;
     text-align: center;
     color: white;
     font-size: 26px;
@@ -37,6 +42,19 @@
 @media screen and (min-width:350px) and (max-width:769px){
     .offerbox{
         flex-direction: column;
+    }
+    .offerchild{
+        width: 100%;
+        height: 200px;
+    }
+    .offerchildimg{
+        width: 100%;
+        height: 200px;
+    }
+    .offerchildtext{
+        position: relative;
+        bottom: 150px;
+        width: 340px;
         margin: auto;
     }
 }

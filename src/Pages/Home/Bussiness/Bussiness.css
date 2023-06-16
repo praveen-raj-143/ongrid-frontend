@@ -26,7 +26,7 @@
     width: 350px;
     height: 200px;
     position: relative;
-    top: -222px;
+    top: -226px;
     background-color: rgba(0, 0, 0, 0.555);
     color: white;
 }
@@ -34,7 +34,7 @@
     width: 350px;
     height: 200px;
 }
-.busitemtext1{
+.busitemtextchild{
     padding: 79px 20px 79px 20px;
     font-size: 27px;
 }
@@ -43,5 +43,14 @@
         display: flex;
         flex-direction: column;
         margin: auto;
+    }
+    .busitem{
+        width: 100%;
+    }
+    .busitemimg{
+        width: 100%;
+    }
+    .busitemtext{
+        width: 100%;
     }
 }

@@ -5,6 +5,14 @@ import Bookademo from '../Pages/Bookademo/Bookademo'
 import Faq from '../Pages/Faq/Faq'
 import Home from '../Pages/Home/Home'
 import Siginup from '../Pages/Signin/Siginup'
+import About from '../Footer/Aboutus/About'
+import Career from '../Footer/Career/Career'
+import Contactus from '../Footer/Contactus/Contactus'
+import Ourblog from '../Footer/Ourblog/Ourblog'
+import Privacy from '../Footer/Privacy/Privacy'
+import Termsandcondition from '../Footer/Termsandcondition/Termsandcondition'
+import Offercomp from '../Pages/Home/Ourofferings/Hoveroffercomp/Offercomp'
+import Forgot from '../Pages/Signin/Forgot'
 const Routefile = () => {
   return (
     <Routes>
@@ -13,6 +21,14 @@ const Routefile = () => {
         <Route path='/bookademo' element={<Bookademo/>} />
         <Route path='/faq' element={<Faq/>} />
         <Route path='/signup' element={<Siginup/>} />
+        <Route path='/aboutus' element={<About/>} />
+        <Route path='/career' element={<Career/>} />
+        <Route path='/contactus' element={<Contactus/>} />
+        <Route path='/ourblog' element={<Ourblog/>} />
+        <Route path='/privacy' element={<Privacy/>} />
+        <Route path='/termsandcondition' element={<Termsandcondition/>} />
+        <Route path='/hovercompoffer/:id' element={<Offercomp/>} />
+        <Route path='/forgotpassword' element={<Forgot/>} />
     </Routes>
   )
 }

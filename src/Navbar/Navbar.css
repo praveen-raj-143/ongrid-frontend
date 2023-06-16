@@ -32,6 +32,11 @@
 .e{
     margin-right: 30px;
 }
+#db{
+    border: 1px solid white;
+    border-radius: 25px;
+    padding: 8px;
+}
 @media screen and (min-width:350px) and (max-width:769px) {
     .header{
         flex-direction: column;

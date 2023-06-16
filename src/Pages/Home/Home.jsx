@@ -1,5 +1,5 @@
 import React from 'react'
-// import Whyongrid from './Whyongrid/Whyongrid'
+import Whyongrid from './Whyongrid/Whyongrid'
 import Ourofferings from './Ourofferings/Ourofferings'
 import Bussiness from './Bussiness/Bussiness'
 import { Link } from 'react-router-dom'
@@ -11,14 +11,14 @@ const Home = () => {
   return (
     <div>
         <Header/>
-        {/* <Whyongrid/> */}
+        <Whyongrid/>
         <Ourofferings/>
         {/* <Offercomp/> */}
         <Bussiness/>
         {/* <Hovercomp/> */}
         <br />
         <div className='btnstarted'>
-        <Link to='/signup'><button className='btnstar1'>GET STARTED</button></Link>
+        <Link to='/signin'><button className='btnstar1'>GET STARTED</button></Link>
         </div>
     </div>
   )
