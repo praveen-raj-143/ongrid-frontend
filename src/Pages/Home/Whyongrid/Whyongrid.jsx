@@ -8,7 +8,7 @@ import constructer from './why/whyOngridConstructor.jpg'
 const Whyongrid = () => {
   return (
     <div id='whyongrid'>
-        <div className='whytext'>
+        <div className='whytext'> 
         <h1>Why OnGrid</h1>
         <hr className='hrline'/>
         <p className='textwhy'>OnGrid is the fastest growing ISO-certified digital platform for background verifications and checks, serving over 2000+ clients, and having run over 100 million checks. OnGrid's advanced methodologies and proprietary algorithms across 50+ checks brings what you are really expecting from your BGV partner - high efficacy and accuracy, lesser TAT, lesser cost, and hassle-free experience for HR/TA or operations managers running the verification process.</p>

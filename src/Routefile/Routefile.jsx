@@ -13,12 +13,14 @@ import Privacy from '../Footer/Privacy/Privacy'
 import Termsandcondition from '../Footer/Termsandcondition/Termsandcondition'
 import Offercomp from '../Pages/Home/Ourofferings/Hoveroffercomp/Offercomp'
 import Forgot from '../Pages/Signin/Forgot'
+import Userdetails from '../Pages/Signin/Userdata/Userdetails'
 const Routefile = () => {
+  const isLoggedIn = window.localStorage.getItem("loggedIn")
   return (
     <Routes>
       <Route path='/' element={<Home/>} />
         <Route path='/signin' element={<Signin/>} />
-        <Route path='/bookademo' element={<Bookademo/>} />
+        <Route path='/bookademo' element={isLoggedIn==="true" ? <Bookademo/> : <Signin/> } />
         <Route path='/faq' element={<Faq/>} />
         <Route path='/signup' element={<Siginup/>} />
         <Route path='/aboutus' element={<About/>} />
@@ -29,6 +31,8 @@ const Routefile = () => {
         <Route path='/termsandcondition' element={<Termsandcondition/>} />
         <Route path='/hovercompoffer/:id' element={<Offercomp/>} />
         <Route path='/forgotpassword' element={<Forgot/>} />
+        <Route path='/userdetails' element={<Userdetails/>} />
+        
     </Routes>
   )
 }

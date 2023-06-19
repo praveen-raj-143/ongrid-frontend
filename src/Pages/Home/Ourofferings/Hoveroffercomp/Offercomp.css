@@ -64,5 +64,6 @@
     .offercomp{
         position: relative;
     bottom: 700px;
+    width: 100%;
     }
 }

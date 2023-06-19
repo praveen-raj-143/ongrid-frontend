@@ -15,14 +15,15 @@ const Signin = () => {
         "Accept":"application/json"
       }
     })
-    // result = await result.json()
-    // console.log(result)
     .then(res=>res.json())
     .then(data=>{ 
       if(data.status==="ok"){
         alert("login successfully")
-        window.location.href = "./bookademo"
-      }else{
+        window.localStorage.setItem("token", data.data)
+        window.localStorage.setItem("loggedIn", true)
+        window.location.href = "./"
+      }
+      else if(data.status==="error"){
         alert("failed to login invalid credentails")
       }
     })

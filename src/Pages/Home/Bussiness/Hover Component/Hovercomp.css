@@ -11,7 +11,7 @@
     animation-duration: 1s;
 }
 .hovertextbox{
-    background-color: rgba(34, 36, 43, 0.767);
+    background-color: rgba(34, 36, 43, 0.822);
     color: white;
     padding: 20px 60px 20px 60px;
     border-bottom: 6px solid #34d0d0;
@@ -120,4 +120,12 @@
         transform: translateY(0%)scale(1);
         opacity: 1;
     }
+}
+@media screen and (min-width:350px) and (max-width:769px){
+    .hovercontainer{
+        position: relative;
+        bottom: 1800px;
+        width: 100%;
+    }
+
 }
