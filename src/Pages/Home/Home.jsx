@@ -17,9 +17,13 @@ const Home = () => {
         <Bussiness/>
         {/* <Hovercomp/> */}
         <br />
+        <br />
+        <br />
         <div className='btnstarted'>
         <Link to='/signin'><button className='btnstar1'>GET STARTED</button></Link>
         </div>
+        <br />
+        <br />
     </div>
   )
 }

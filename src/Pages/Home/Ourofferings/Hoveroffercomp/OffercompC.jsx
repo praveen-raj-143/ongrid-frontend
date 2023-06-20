@@ -1,11 +1,12 @@
 import React from 'react'
 import './OffercompC.css'
+import { Link } from 'react-router-dom';
 const OffercompC = (props) => {
   return (props.catch) ? (
     <div className='offercomp compc'>
         <div className='offercompchild'>
           <h1 className='offercompchilditem'>Digital, Real-Time or Near Real-Time</h1>
-          <button className='offercompchilditem offerbtn'>Book a demo</button>
+          <button className='offercompchilditem offerbtn'><Link className='hoverlinktxt' to='./bookademo'>Book a demo</Link></button>
           <button className='closebtn' onClick={()=>props.setCatch(false)} >X</button>
       </div>
       <div>

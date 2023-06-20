@@ -7,7 +7,7 @@ const Signin = () => {
   async function login(){
     let item= {email,password}
 
-    fetch("http://localhost:5000/login",{
+    fetch("https://ongrid-backend-atlas.onrender.com/login",{
       method:"POST",
       body:JSON.stringify(item),
       headers:{
@@ -19,6 +19,7 @@ const Signin = () => {
     .then(data=>{ 
       if(data.status==="ok"){
         alert("login successfully")
+        console.log(data)
         window.localStorage.setItem("token", data.data)
         window.localStorage.setItem("loggedIn", true)
         window.location.href = "./"

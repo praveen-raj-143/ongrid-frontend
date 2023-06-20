@@ -13,13 +13,14 @@ import Privacy from '../Footer/Privacy/Privacy'
 import Termsandcondition from '../Footer/Termsandcondition/Termsandcondition'
 import Offercomp from '../Pages/Home/Ourofferings/Hoveroffercomp/Offercomp'
 import Forgot from '../Pages/Signin/Forgot'
-import Userdetails from '../Pages/Signin/Userdata/Userdetails'
+// import Userdetails from '../Pages/Signin/Userdata/Userdetails'
+import Bookpop from '../Pages/Bookademo/Bookpop'
 const Routefile = () => {
   const isLoggedIn = window.localStorage.getItem("loggedIn")
   return (
     <Routes>
       <Route path='/' element={<Home/>} />
-        <Route path='/signin' element={<Signin/>} />
+        <Route path='/signin' element={isLoggedIn==="true" ? "" : <Signin/>} />
         <Route path='/bookademo' element={isLoggedIn==="true" ? <Bookademo/> : <Signin/> } />
         <Route path='/faq' element={<Faq/>} />
         <Route path='/signup' element={<Siginup/>} />
@@ -31,7 +32,8 @@ const Routefile = () => {
         <Route path='/termsandcondition' element={<Termsandcondition/>} />
         <Route path='/hovercompoffer/:id' element={<Offercomp/>} />
         <Route path='/forgotpassword' element={<Forgot/>} />
-        <Route path='/userdetails' element={<Userdetails/>} />
+        <Route path='/greetings' element={<Bookpop/>} />
+        {/* <Route path='/userdetails' element={isLoggedIn==="true" ? "" : <Signin/>} /> */}
         
     </Routes>
   )

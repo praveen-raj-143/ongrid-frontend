@@ -1,5 +1,4 @@
 .header{
-    
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -28,6 +27,7 @@
 .logo{
     width: 150px;
     height: 50px;
+    margin-left: 20px;
 }
 .e{
     margin-right: 30px;
@@ -37,11 +37,62 @@
     border-radius: 25px;
     padding: 8px;
 }
+.dropbtn{
+    margin: 15px;
+}
+.dropdown{
+    display: none;
+    background-color: rgb(34, 36, 43);
+    color: white;
+}
+.dropdownmenu{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.fparent{
+    margin: 0px;
+    padding: 0px;
+}
+.f{
+    margin: 0px;
+    padding: 15px;
+    cursor: pointer;
+    border: none;
+    background-color: rgba(61, 61, 61, 0.993);
+    z-index: 1;
+    width: 100%;
+    border: none;
+    display: none;
+}
+.dataname{
+    color: white;
+    margin: 10px;
+}
 @media screen and (min-width:350px) and (max-width:769px) {
     .header{
-        flex-direction: column;
+        display: none;
     }
     .monkey{
         flex-direction: column;
+    }
+    .dropdown{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .f{
+        display: block;
+        z-index: 2;
+    }
+    .active-class{
+        color: aqua;
+        text-decoration: none;
+        background-color: rgba(61, 61, 61, 0.61);
+    }
+    .notactive-class{
+        color: rgb(255, 252, 252);
+        text-decoration: none;
+        background-color: rgba(61, 61, 61, 0.993);
     }
 }

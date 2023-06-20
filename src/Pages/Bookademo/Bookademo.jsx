@@ -6,10 +6,11 @@ const Bookademo = () => {
   const [phonenumber, setPhonenumber]=useState("")
   const [organisation,setOrganisation]=useState("")
   const [aboutongrid,setAboutongrid]=useState("")
+  
   async function bookademo(){
     let item= {name,email,phonenumber,organisation,aboutongrid}
 
-    let result = await fetch("http://localhost:5000/bookademo",{
+    let result = await fetch("https://ongrid-backend-atlas.onrender.com/bookademo",{
       method:"POST",
       body:JSON.stringify(item),
       headers:{
@@ -17,8 +18,9 @@ const Bookademo = () => {
         "Accept":"application/json"
       }
     })
-    result = await result.json()
-     alert(result)
+    result.json()
+    alert(result)
+    //  window.location.href='./greetings'
   }
   return (
     <div className='demobox'>

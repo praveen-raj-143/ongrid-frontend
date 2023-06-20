@@ -4,6 +4,7 @@ import './Header.css'
 import hero from './headimg/hero-image2.jpg'
 // import grid from './headimg/grid.png'
 const Header = () => {
+  const isLoggedIn = window.localStorage.getItem("loggedIn")
   return (
     <div className='headmain'>
         <div className='headimg' >
@@ -13,7 +14,7 @@ const Header = () => {
             <h1>DIGITAL TRUST PLATFORM</h1>
             <p className='headtxt1'>Empowering employers and service providers through comprehensive identity and background
 verifications for ensuring trust and accountability, and for achieving HR/ISO compliance.</p>
-<Link to='/signup'><button className='btnstar'>GET STARTED</button></Link>
+{isLoggedIn ? "" : <Link to='/signin'><button className='btnstar'>GET STARTED</button></Link>}
             </div>
         </div>
         <div className='headfoot'>

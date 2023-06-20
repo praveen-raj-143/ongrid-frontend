@@ -1,11 +1,12 @@
 import React from 'react'
 import './OffercompB.css'
+import { Link } from 'react-router-dom';
 const OffercompB = (props) => {
   return (props.blogger) ? (
     <div className='offercomp compb'>
          <div className='offercompchild'>
           <h1 className='offercompchilditem'>Digital, Real-Time or Near Real-Time</h1>
-          <button className='offercompchilditem offerbtn'>Book a demo</button>
+          <button className='offercompchilditem offerbtn'><Link className='hoverlinktxt' to='./bookademo'>Book a demo</Link></button>
           <button className='closebtn' onClick={()=>props.setBlogger(false)} >X</button>
       </div>
       <div>

@@ -5,7 +5,7 @@ const Hovercomp = (props) => {
 
   return (props.hide) ? (
     <div className='hovercontainer'>
-            <button onClick={()=>props.setHide(false)}  className='exitbtn'>x</button>
+            <button onClick={()=>props.setHide(false)}  className='exitbtn'>X</button>
         <div className='hovertextbox'>
             <h1>Education/EdTech</h1>
             <p>With the rise in demand, organizations in the Education and EdTech sector are on a hiring spree. The primary users of your service or platform are students, and their safety and learning outcomes are of paramount importance. BGV thus ensures the quality of new hires - tutors, administrative staff, or sales staff, thus helping towards a productive and safe learning environment.</p>

@@ -10,7 +10,7 @@ const Siginup = () => {
   async function signUp(){
     let item= {username,age,companyname,employeeid,email,password}
 
-    await fetch("http://localhost:5000/signup",{
+    await fetch("https://ongrid-backend-atlas.onrender.com/signup",{
       method:"POST",
       body:JSON.stringify(item),
       headers:{

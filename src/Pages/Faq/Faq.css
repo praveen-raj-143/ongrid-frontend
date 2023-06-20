@@ -18,20 +18,17 @@
     font-size: large;
 }
 .faqtextbox{
-    width: 62%;
-    height: fit-content;
+    
+    height: 0;
     overflow: hidden;
-    transition: height 2s ease;
+    transition: height 2s ease-out;
+    cursor: pointer;
+    /* transition: height 2s ease;
     animation-name: faqbody;
-    animation-duration: 2s;
+    animation-duration: 2s; */
 }
-
-@keyframes faqbody {
-    from{
-       transform: rotateX('90deg') scale(0);
-    }
-    to{
-        
-        transform:rotateX('0deg') scale(1);
-    }
+.Collapsible__contentOuter{
+    width: 62%;
+    transition-timing-function: ease-out;
+    
 }

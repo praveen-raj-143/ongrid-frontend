@@ -6,8 +6,9 @@
     width: 80%;
     height: fit-content;
     margin: auto;
-    position: relative;
-    bottom: 460px;
+    position: absolute;
+    top: 1850px;
+    left: 130px;
     animation: ouroffer;
     animation-duration: 1s;
 }
@@ -50,6 +51,10 @@
     bottom: 15px;
     left: 15px;
 }
+.hoverlinktxt{
+    text-decoration: none;
+    color: white;
+}
 @keyframes ouroffer {
     0%{
         transform: translateX(-35%) scale(0);
@@ -62,8 +67,9 @@
 }
 @media screen and (min-width:350px) and (max-width:769px){
     .offercomp{
-        position: relative;
-    bottom: 700px;
-    width: 100%;
+        position: absolute;
+        width: 100%;
+        top: 3400px;
+        left: 0px;
     }
 }
