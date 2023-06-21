@@ -42,6 +42,7 @@
 }
 .dropbtn{
     margin: 15px;
+    padding: 5px;
 }
 .dropdown{
     display: none;
@@ -51,7 +52,7 @@
 .dropdownmenu{
     display: flex;
     flex-direction: column;
-    overflow: hidden;
+    
 }
 .fparent{
     margin: 0px;
@@ -72,6 +73,20 @@
     color: white;
     margin: 10px;
     padding: 12px;
+}
+.Collapsible{
+    padding: 15px;
+}
+    
+
+.Collapsible__trigger{
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+}
+.Collapsible__contentOuter{
+    width: 100%;
+    transition-timing-function: ease-out;
+    
 }
 @media screen and (min-width:350px) and (max-width:769px) {
     .header{

@@ -5,7 +5,7 @@ const HovercompG = (props) => {
 
   return (props.robbin) ? (
     <div className='hovercontainer'>
-            <button onClick={()=>props.setRobbin(false)}  className='exitbtn'>x</button>
+            <button onClick={()=>props.setRobbin(false)}  className='exitbtn'>X</button>
         <div className='hovertextbox'>
             <h1>IT/ITes</h1>
             <p>The IT/ITes sector and exports have propelled the growth of services sector in many geographies, making them the preferred offshore development destination. The IT industry hires millions of new employees/contractors every year. This sector needs to be well prepared to adhere to the Governance, Risk, and Compliance requirements that new age international engagements demand. To safeguard the interests of clients, accountability of its employees is of the highest importance, and BGV has become a standard across the industry.</p>

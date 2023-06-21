@@ -31,7 +31,6 @@
     color: white;
 }
 .exitbtn{
-    height: fit-content;
     color: white;
     background-color: aqua;
     border: none;
@@ -42,7 +41,6 @@
     bottom: 15px;
     left: 15px;
     float: right;
-    
 }
 
 .compd{

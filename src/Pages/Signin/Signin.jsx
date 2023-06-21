@@ -22,7 +22,7 @@ const Signin = () => {
         console.log(data)
         window.localStorage.setItem("token", data.data)
         window.localStorage.setItem("loggedIn", true)
-        window.location.href = "./"
+        window.location.href = "./" 
       }
       else if(data.status==="error"){
         alert("failed to login invalid credentails")

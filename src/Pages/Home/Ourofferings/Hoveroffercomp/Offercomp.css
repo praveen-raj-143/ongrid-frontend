@@ -40,13 +40,12 @@
     border-radius: 25px;
 }
 .closebtn{
-    
     color: white;
     background-color: aqua;
     border: none;
     cursor: pointer;
     border-radius: 50%;
-    padding: 10px;
+    padding: 7px 9px 7px 9px;
     position: relative;
     bottom: 15px;
     left: 15px;

@@ -5,7 +5,7 @@ const HovercompB = (props) => {
 
   return (props.luffy) ? (
     <div className='hovercontainer compz'>
-            <button onClick={()=>props.setLuffy(false)}  className='exitbtn'>x</button>
+            <button onClick={()=>props.setLuffy(false)}  className='exitbtn'>X</button>
         <div className='hovertextbox'>
             <h1>Staffing</h1>
             <p>The staffing industry has been at the forefront of a paradigm shift with respect to the way employees are hired and deployed. With the aspect of long-term full-time employment being actively replaced with freelancing and temporary stints, more and more organizations (clients) rely on staffing companies for their staff needs. At the same time, these organizations are looking for verified people to be deployed at their sites. Staffing companies can not only reduce risk through background verification but also use it as a differentiator to win client contracts.</p>

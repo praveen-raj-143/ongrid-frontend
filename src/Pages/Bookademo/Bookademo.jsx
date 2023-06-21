@@ -10,7 +10,7 @@ const Bookademo = () => {
   async function bookademo(){
     let item= {name,email,phonenumber,organisation,aboutongrid}
 
-    let result = await fetch("https://ongrid-backend-atlas.onrender.com/bookademo",{
+    fetch("https://ongrid-backend-atlas.onrender.com/bookademo",{
       method:"POST",
       body:JSON.stringify(item),
       headers:{
@@ -18,10 +18,19 @@ const Bookademo = () => {
         "Accept":"application/json"
       }
     })
-    result.json()
-    alert(result)
+    .then(res=>res.json())
+    .then(data=>{ 
+      if(data.status==="ok"){
+        alert("demo booked successfully") 
+        window.localStorage.setItem("demobooked", true)
+      }
+      else{
+        alert("failed to book demo. Invalid credentails please check and try again.")
+      }
+    })
     //  window.location.href='./greetings'
   }
+  const booked = window.localStorage.getItem("demobooked")
   return (
     <div className='demobox'>
       <div className='boxone textbox'>
@@ -45,11 +54,17 @@ const Bookademo = () => {
             <div ><img src="https://ongrid.in/images/home/logo/nobroker.png" alt="not found" className='companyimages' /></div>
             <div ><img src="https://ongrid.in/images/home/logo/delhivery.png" alt="not found" className='companyimages' /></div>
             <div ><img src="https://ongrid.in/images/home/logo/ola.png" alt="not found" className='companyimages' /></div>
-            
           </div>
         </div>
       </div>
-      <div className='boxone formbox'>
+      {booked ? <div className='boxone formbox'>
+        <h1>Thank you for getting in touch! We appreciate you contacting us.</h1>
+        <br />
+        <h1>One of our colleagues will get in touch with you soon!</h1>
+        <br />
+        <h1>Have a great day!</h1>
+        
+    </div> : <div className='boxone formbox'>
         <label htmlFor="">Name*</label> <br />
         <input type="text" value={name} onChange={(e)=>setName(e.target.value)} className='frminpt' placeholder='Please provide your name'/>
         <br /> <br />
@@ -76,7 +91,7 @@ const Bookademo = () => {
           <option value="">Other</option>
         </select><br /> <br />
         <button className='frmbtn' onClick={bookademo}>Submit</button>
-      </div>
+      </div>}
     </div>
   )
 }

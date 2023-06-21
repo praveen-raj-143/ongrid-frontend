@@ -5,7 +5,7 @@ const HovercompC = (props) => {
 
   return (props.zoro) ? (
     <div className='hovercontainer'>
-            <button onClick={()=>props.setZoro(false)}  className='exitbtn'>x</button>
+            <button onClick={()=>props.setZoro(false)}  className='exitbtn'>X</button>
         <div className='hovertextbox'>
             <h1>Transportation, Logistics, eCommerce</h1>
             <p>With the adoption of high-technology in the supply chain sector, the industry has involuntarily become a massive driver of change, especially in developing economies. With delivery boys and warehouse staff handling high-value inventory, engaging with end customers at their doorsteps, or ferrying passengers, having an accountable workforce is not just desirable, but also necessary.</p>

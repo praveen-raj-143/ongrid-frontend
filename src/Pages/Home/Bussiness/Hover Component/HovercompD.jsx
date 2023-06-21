@@ -5,7 +5,7 @@ const HovercompD = (props) => {
 
   return (props.usop) ? (
     <div className='hovercontainer compd'>
-            <button onClick={()=>props.setUsop(false)}  className='exitbtn'>x</button>
+            <button onClick={()=>props.setUsop(false)}  className='exitbtn'>X</button>
         <div className='hovertextbox'>
             <h1>Banking, Financial Services, Insurance and Fin-Tech</h1>
             <p>Banking, Financial Services, and Insurance sector has gone through a decade of exponential growth with rapid innovation in technology (the rise of fintech) and rise in per capita income of the consumers. This period of unprecedented growth has been accompanied with ever increasing compliance and regulatory burden, especially given the employee access to highly sensitive financial data. This brings in its own source of challenges where the accountability of workforce is of supreme importance especially.</p>

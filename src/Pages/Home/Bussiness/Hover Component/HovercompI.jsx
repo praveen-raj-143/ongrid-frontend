@@ -5,7 +5,7 @@ const HovercompI = (props) => {
 
   return (props.franky) ? (
     <div className='hovercontainer'>
-            <button onClick={()=>props.setFranky(false)}  className='exitbtn'>x</button>
+            <button onClick={()=>props.setFranky(false)}  className='exitbtn'>X</button>
         <div className='hovertextbox'>
             <h1>Internet Platforms</h1>
             <p>Modern-day internet platforms have redefined the way businesses are conducted, and customers or users are acquired. While digital distribution definitely helps in onboarding the customers or users faster, it definitely leaves the businesses susceptible to compliance risks, identity frauds, and/or banking frauds. Instant verification and/or KYC of customers or users can help in compliance adherence and risk mitigation, without adding friction to the seamless onboarding.</p>

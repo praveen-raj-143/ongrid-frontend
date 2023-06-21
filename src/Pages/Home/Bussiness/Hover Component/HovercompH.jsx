@@ -5,7 +5,7 @@ const HovercompH = (props) => {
 
   return (props.sanji) ? (
     <div className='hovercontainer'>
-            <button onClick={()=>props.setSanji(false)}  className='exitbtn'>x</button>
+            <button onClick={()=>props.setSanji(false)}  className='exitbtn'>X</button>
         <div className='hovertextbox'>
             <h1>Healthcare</h1>
             <p>Healthcare industry globally will continue to grow with improving health seeking behavior and growing concerns for personal health among the general population. An impetus to this has been witnessed due to COVID-19, with a higher demand for testing done from the comforts of home. Provided the nature of work in the sector where there is a close engagement of the staff with service seekers, at home or in hospitals and clinics, and staff having access to highly sensitive medical data as well as drugs, BGV is essential to avoid any unforeseen situations.</p>

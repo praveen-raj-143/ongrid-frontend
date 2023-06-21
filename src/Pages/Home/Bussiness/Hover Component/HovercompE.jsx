@@ -5,7 +5,7 @@ const HovercompE = (props) => {
 
   return (props.nami) ? (
     <div className='hovercontainer compe'>
-            <button onClick={()=>props.setNami(false)}  className='exitbtn'>x</button>
+            <button onClick={()=>props.setNami(false)}  className='exitbtn'>X</button>
         <div className='hovertextbox'>
             <h1>Retail, Hospitality, F&B</h1>
             <p>As we step into the new decade, the Retail, Hospitality, and F&B sector have not only grown but evolved to justify the 21st-century aspiration and pallette! The beauty of the industry involves an intimate experience delivered to its stakeholders thus living up to the term hospitality. Considering that each member of the workforce represents your brand, hiring and retaining a thorough breed of professionals becomes critical. Therefore, BGV is a common and accepted norm across the industry.</p>

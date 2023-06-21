@@ -5,7 +5,7 @@ const HovercompF = (props) => {
 
   return (props.choper) ? (
     <div className='hovercontainer compf'>
-            <button onClick={()=>props.setChoper(false)}  className='exitbtn'>x</button>
+            <button onClick={()=>props.setChoper(false)}  className='exitbtn'>X</button>
         <div className='hovertextbox'>
             <h1>Manufacturing</h1>
             <p>In addition to the compliances required to run a manufacturing setup, the sector has always been vulnerable to falling prey to incidents of destructive herd mentality. Therefore, it becomes critical to mitigate the risk through the BGV of the workforce, especially those working in factories, plants, and production lines.</p>
