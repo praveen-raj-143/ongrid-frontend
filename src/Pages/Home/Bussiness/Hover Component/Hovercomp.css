@@ -128,7 +128,7 @@
         opacity: 1;
     }
 }
-@media screen and (min-width:350px) and (max-width:769px){
+@media screen and (max-width:769px){
     .hovercontainer{
         position: relative;
         bottom: 1800px;

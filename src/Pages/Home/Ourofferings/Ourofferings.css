@@ -39,7 +39,7 @@
     font-size: 26px;
     padding: 0px 20px 0px 20px;
 }
-@media screen and (min-width:350px) and (max-width:769px){
+@media screen and (max-width:769px){
     .offerbox{
         flex-direction: column;
     }

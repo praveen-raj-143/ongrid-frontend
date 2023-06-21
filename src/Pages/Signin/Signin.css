@@ -37,7 +37,7 @@ button:hover{
     text-decoration: none;
     color: aqua;
 }
-@media screen and (min-width:350px) and (max-width:769px){
+@media screen and (max-width:769px){
     .signbox{
         width: 100%;
     }
