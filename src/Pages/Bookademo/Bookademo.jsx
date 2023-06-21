@@ -23,12 +23,13 @@ const Bookademo = () => {
       if(data.status==="ok"){
         alert("demo booked successfully") 
         window.localStorage.setItem("demobooked", true)
+        window.location.href='./'
       }
       else{
         alert("failed to book demo. Invalid credentails please check and try again.")
       }
     })
-    //  window.location.href='./greetings'
+    
   }
   const booked = window.localStorage.getItem("demobooked")
   return (
