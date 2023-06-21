@@ -58,6 +58,10 @@ const Navbar = () => {
         {/* <div className='dropbtn'>
           <button onClick={dropclick} >MENU</button>
         </div> */}
+        <div className='menubox'>
+        <div className='loginname'>{isLoggedIn ? <div><h3 className='dataname'>hai! {userdata.username}</h3></div> : ""}
+            {isLoggedIn ? <h4 className='d' onClick={logout}>logout</h4> : ""}</div>
+        </div>
         <Collapsible trigger="MENU">
         <div className='dropdownmenu'>
            <ul type="none" className='fparent'>
@@ -67,11 +71,12 @@ const Navbar = () => {
             <li className='f'><Link className='notactive-class' to='/#bussiness' smooth>Bussiness</Link></li>
             <li className='f'><NavLink to='/faq' className={({isActive})=>(isActive ? 'active-class' : 'notactive-class')}>FAQs</NavLink></li>
             <li className='f'><NavLink to='/bookademo' id='db' className={({isActive})=>(isActive ? 'active-class' : 'notactive-class')}>Book a Demo</NavLink></li>
-            <li className='f'><NavLink to='/signin' className={({isActive})=>(isActive ? 'active-class' : 'notactive-class')}>Sign-in</NavLink></li>
-            <li className='f'><NavLink to='/userdetails' className={({isActive})=>(isActive ? 'active-class' : 'notactive-class')}>user details</NavLink></li>
+            {isLoggedIn ? "" : <li className='f'><NavLink to='/signin' className={({isActive})=>(isActive ? 'active-class' : 'notactive-class')}>Sign-in</NavLink></li>}
+            
            </ul>
-        </div>
+        </div >
         </Collapsible>
+        
         </div>
         {/* {drop &&  } */}
     </div>

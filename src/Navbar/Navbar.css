@@ -76,9 +76,17 @@
 }
 .Collapsible{
     padding: 15px;
-}
     
-
+}
+.menubox{
+    display: flex;
+    flex-direction: row;
+}
+.loginname{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
 .Collapsible__trigger{
     background-color: rgba(255, 255, 255, 0);
     border: none;
