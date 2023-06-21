@@ -25,7 +25,7 @@ const Signin = () => {
         window.location.href = "./" 
       }
       else if(data.status==="error"){
-        alert("failed to login invalid credentails")
+        alert("failed to login invalid credentails") 
       }
     })
   }

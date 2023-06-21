@@ -1,7 +1,34 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Contactus.css'
 import Map from './Map'
 const Contactus = () => {
+  const [name,setName]=useState("")
+  const [email,setEmail]=useState("")
+  const [phonenumber,setPhonenumber]=useState("")
+  const [query,setQuery]=useState("")
+
+  async function contactUs(){
+    let item= {name,email,phonenumber,query}
+
+    await fetch("https://ongrid-backend-atlas.onrender.com/contactus",{
+      method:"POST",
+      body:JSON.stringify(item),
+      headers:{
+        "Content-Type":"application/json",
+        "Accept":"application/json"
+      }
+    })
+    .then(res=>res.json())
+    .then(data=>{
+      if(data.status==="ok"){
+        alert("Gotcha! we'll get back to you")
+        window.location.href = "./"
+      }else{
+        alert("Sorry! please try again")
+      }
+    })
+  }
+
   return (
     <div>
       <div className='contactimg'>
@@ -11,12 +38,12 @@ const Contactus = () => {
       <div className='contactcontainer'>
         <div className='containeritem contactform'>
           <h2 className='contactformhead'>Bussiness Enquiry? Bugs? Catch up for tea?</h2>
-          <input type="text" placeholder='Name*' className='contactinpt'/><br />
-          <input type="text" placeholder='Email*' className='contactinptmail'/>
-          <input type="number" placeholder='Phone*' className='contactinptmail'/><br />
-          <input type="text" placeholder='Please enter your query here...*' className='contactinpt'/><br />
+          <input value={name} onChange={(e)=>setName(e.target.value)} type="text" placeholder='Name*' className='contactinpt'/><br />
+          <input value={email} onChange={(e)=>setEmail(e.target.value)} type="text" placeholder='Email*' className='contactinptmail'/>
+          <input value={phonenumber} onChange={(e)=>setPhonenumber(e.target.value)} type="number" placeholder='Phone*' className='contactinptmail'/><br />
+          <input value={query} onChange={(e)=>setQuery(e.target.value)} type="text" placeholder='Please enter your query here...*' className='contactinpt'/><br />
           <div className='contactbtnparent'>
-          <button className='contactbtn'>SUBMIT</button>
+          <button className='contactbtn' onClick={contactUs}>SUBMIT</button>
           </div>
         </div>
         <div className='containeritem contactparent'>
