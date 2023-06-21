@@ -46,8 +46,8 @@ const Navbar = () => {
         <div className='monkey'>
             <button className='d '><NavLink to='/bookademo' id='db' className={({isActive})=>(isActive ? 'active-class' : 'notactive-class')}>Book a Demo</NavLink></button>
             {isLoggedIn ? "" : <button className='d e'><NavLink to='/signin' className={({isActive})=>(isActive ? 'active-class' : 'notactive-class')}>Sign-in</NavLink></button>}
-            {isLoggedIn ? <h3 className='dataname'>{userdata.username}</h3> : ""}
-            {isLoggedIn ? <button onClick={logout}>logout</button> : ""}
+            {isLoggedIn ? <div><h3 className='dataname'>hai! {userdata.username}</h3></div> : ""}
+            {isLoggedIn ? <button className='d' onClick={logout}>logout</button> : ""}
         </div>
         </div>
         <div className='dropdown'>

@@ -5,11 +5,14 @@
     background-color: rgb(34, 36, 43);
 }
 .monkey{
+
+    margin-right: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 .d{
+    color: white;
     padding: 10px;
     cursor: pointer;
     border: none;
@@ -68,6 +71,7 @@
 .dataname{
     color: white;
     margin: 10px;
+    padding: 12px;
 }
 @media screen and (min-width:350px) and (max-width:769px) {
     .header{
