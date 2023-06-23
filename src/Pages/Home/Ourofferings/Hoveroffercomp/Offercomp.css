@@ -3,7 +3,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
-    width: 80%;
+    width: 81%;
     height: fit-content;
     margin: auto;
     position: absolute;
@@ -66,9 +66,10 @@
 }
 @media screen and (max-width:769px){
     .offercomp{
-        position: absolute;
+        position: fixed;
         width: 100%;
-        top: 3400px;
-        left: 0px;
+        height: 100%;
+        top: 0;
+        left: 0;
     }
 }

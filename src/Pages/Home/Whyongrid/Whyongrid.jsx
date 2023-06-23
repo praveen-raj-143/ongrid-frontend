@@ -13,6 +13,7 @@ const Whyongrid = () => {
         <hr className='hrline'/>
         <p className='textwhy'>OnGrid is the fastest growing ISO-certified digital platform for background verifications and checks, serving over 2000+ clients, and having run over 100 million checks. OnGrid's advanced methodologies and proprietary algorithms across 50+ checks brings what you are really expecting from your BGV partner - high efficacy and accuracy, lesser TAT, lesser cost, and hassle-free experience for HR/TA or operations managers running the verification process.</p>
         </div>
+        <div className='ongridparent'>
         <div className='firstgrid'>
         <div className='ongrid ongrid1'>
               <img src="https://ongrid.in/images/home/leverage.png" alt="not found" className='whyimg' />
@@ -82,6 +83,7 @@ const Whyongrid = () => {
                 </div>
               </div>
             </div>
+        </div>
         </div>
     </div>
   )

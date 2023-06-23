@@ -27,10 +27,11 @@
 .secondgrid{
     display: flex;
     flex-direction: row;
-    width: 86%;
     justify-content: center;
+    width: 86%;
     margin: auto;
 }
+
 .griditem{
     height: 450px;
     margin: 5px;
