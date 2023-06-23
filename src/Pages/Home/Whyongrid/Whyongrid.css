@@ -122,10 +122,10 @@
         width: 100%;
     }
     .ongrid2{
-        width: 48%;
+        width: 100%;
     }
     .ongrid3{
-        width: fit-content;
+        width: 100%;
     }
     .secondgrid{
         flex-direction: column-reverse;

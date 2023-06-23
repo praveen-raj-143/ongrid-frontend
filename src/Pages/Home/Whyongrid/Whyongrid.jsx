@@ -35,7 +35,7 @@ const Whyongrid = () => {
                 <li>Police and Court record verification</li>
                 <li>Global database checks, credits checks</li>
                 <li>CV validation, eLockr reference checks</li>
-                <li>Another 40+ checks to choose from</li>
+                <li>Another 40+ checks to choose from</li> 
               </ul>
             </div>
             <div className='ongrid'><img src={constructer} alt="not found" className='ongrid3' /></div>

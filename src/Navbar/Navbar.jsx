@@ -59,9 +59,7 @@ const Navbar = () => {
           <button onClick={dropclick} >MENU</button>
         </div> */}
         <div className='menubox'>
-        <div className='loginname'>{isLoggedIn ? <div><h3 className='dataname'>hai! {userdata.username}</h3></div> : ""}
-            {isLoggedIn ? <h4 className='d' onClick={logout}>logout</h4> : ""}</div>
-        </div>
+        
         <Collapsible trigger="MENU">
         <div className='dropdownmenu'>
            <ul type="none" className='fparent'>
@@ -76,7 +74,9 @@ const Navbar = () => {
            </ul>
         </div >
         </Collapsible>
-        
+        <div className='loginname'>{isLoggedIn ? <div><h3 className='dataname'>hai! {userdata.username}</h3></div> : ""}
+            {isLoggedIn ? <h4 className='d' onClick={logout}>logout</h4> : ""}</div>
+        </div>
         </div>
         {/* {drop &&  } */}
     </div>
