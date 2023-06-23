@@ -13,7 +13,7 @@ import Privacy from '../Footer/Privacy/Privacy'
 import Termsandcondition from '../Footer/Termsandcondition/Termsandcondition'
 import Offercomp from '../Pages/Home/Ourofferings/Hoveroffercomp/Offercomp'
 import Forgot from '../Pages/Signin/Forgot'
-// import Userdetails from '../Pages/Signin/Userdata/Userdetails'
+import Userdetails from '../Pages/Signin/Userdata/Userdetails'
 
 const Routefile = () => {
   const isLoggedIn = window.localStorage.getItem("loggedIn")
@@ -32,7 +32,7 @@ const Routefile = () => {
         <Route path='/termsandcondition' element={<Termsandcondition/>} />
         <Route path='/hovercompoffer/:id' element={<Offercomp/>} />
         <Route path='/forgotpassword' element={<Forgot/>} />   
-        {/* <Route path='/userdetails'  element={<Userdetails/>}/>     */}
+        <Route path='/userdetails'  element={<Userdetails/>}/>    
     </Routes>
   )
 }

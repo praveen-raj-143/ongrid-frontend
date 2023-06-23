@@ -92,6 +92,7 @@
 .Collapsible__contentOuter{
     transition-timing-function: ease-out;
 }
+
 @media screen and (min-width:350px) and (max-width:769px) {
     .header{
         display: none;

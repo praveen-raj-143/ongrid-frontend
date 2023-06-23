@@ -1,7 +1,7 @@
 import React, { useState,useEffect } from 'react'
 import './Userdetails.css'
 const Userdetails = () => {
-    const [userdata,setUserdata]=useState
+    const [userdata,setUserdata]=useState("")
     useEffect(()=>{
         fetch("https://ongrid-backend-atlas.onrender.com/userdetails",{
       method:"POST",
@@ -16,7 +16,7 @@ const Userdetails = () => {
     // .then(data=> console.log(data))
     .then(data=>setUserdata(data.data))
       })
-       console.log(userdata)
+      //  console.log(userdata)
     
       // const isLoggedIn = window.localStorage.getItem("loggedIn")
     
@@ -26,10 +26,14 @@ const Userdetails = () => {
         alert("logout successfull!" )
     }
   return (
-    <div>
-        <h1>Name : {userdata.name}</h1>
-        <h1>Email : {userdata.email}</h1>
-        <button onClick={logout}>logout</button>
+    <div className='profilebox'>
+      <h1 className='profilehead'>Profile </h1>
+        <h3>Name : {userdata.username}</h3>
+        <h3>Age : {userdata.age}</h3>
+        <h3>Email : {userdata.email}</h3>
+        <h3>Company : {userdata.companyname}</h3>
+        <h3>Employee ID : {userdata.employeeid}</h3>
+        <button className='profilebtn' onClick={logout}>logout</button>
     </div>
   )
 }

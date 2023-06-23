@@ -1,0 +1,33 @@
+.profilebox{
+    text-align: start;
+    width: 400px;
+    margin: auto;
+}
+.profilehead{
+    padding: 20px;
+    margin: auto;
+    width: 400px;
+    text-align: center;
+   background-color: aqua;
+   color: white;
+}
+.profilebtn{
+    background-color: aqua;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    margin-left: 160px;
+    width: 100px;
+    height: 40px;
+}
+@media screen and (max-width:769px){
+    .profilebox{
+        width: 90%;
+        margin: 0;
+    }
+    .profilehead{
+        width: 100%;
+        margin: 0;
+    }
+}

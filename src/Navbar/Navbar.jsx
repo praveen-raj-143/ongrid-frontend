@@ -23,12 +23,6 @@ const Navbar = () => {
   // console.log(userdata.username)
 
   const isLoggedIn = window.localStorage.getItem("loggedIn")
-
-  const logout=()=>{
-    window.location.href = "./"
-    window.localStorage.clear()
-    alert("logout successfull!" )
-}
   // const dropclick=()=>{
   //   setDrop(true);
   // }
@@ -47,8 +41,7 @@ const Navbar = () => {
         <div className='monkey'>
             <button className='d '><NavLink to='/bookademo' id='db' className={({isActive})=>(isActive ? 'active-class' : 'notactive-class')}>Book a Demo</NavLink></button>
             {isLoggedIn ? "" : <button className='d e'><NavLink to='/signin' className={({isActive})=>(isActive ? 'active-class' : 'notactive-class')}>Sign-in</NavLink></button>}
-            {isLoggedIn ? <div><h3 className='dataname'>hai! {userdata.username}</h3></div> : ""}
-            {isLoggedIn ? <button className='d' onClick={logout}>logout</button> : ""}
+            {isLoggedIn ? <button className='d '><NavLink to='/userdetails' className='notactive-class'>Hai {userdata.username}</NavLink></button> : ""}
         </div>
         </div>
         <div className='dropdown'>
@@ -74,8 +67,7 @@ const Navbar = () => {
            </ul>
         </div >
         </Collapsible> 
-        <div className='loginname'>{isLoggedIn ? <div><h3  className='dataname'>hai! {userdata.username}</h3></div> : ""}
-            {isLoggedIn ? <h4 className='d' onClick={logout}>logout</h4> : ""}
+        <div className='loginname'>{isLoggedIn ? <button className='d '><NavLink to='/userdetails' className='notactive-class'>Hai {userdata.username}</NavLink></button> : ""}
             </div>
         </div>
         </div>
