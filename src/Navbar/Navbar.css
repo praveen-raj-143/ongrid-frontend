@@ -71,8 +71,6 @@
 }
 .dataname{
     color: white;
-    margin: 10px;
-    padding: 12px;
 }
 .Collapsible{
     padding: 15px;
@@ -83,7 +81,7 @@
     flex-direction: row;
 }
 .loginname{
-    text-align: center;
+    text-align: start;
     display: flex;
     flex-direction: row;
 }
@@ -94,7 +92,7 @@
 .Collapsible__contentOuter{
     width: 100%;
     transition-timing-function: ease-out;
-    
+    font-size: x-small;
 }
 @media screen and (min-width:350px) and (max-width:769px) {
     .header{
@@ -121,5 +119,8 @@
         color: rgb(255, 252, 252);
         text-decoration: none;
         background-color: rgba(61, 61, 61, 0.993);
+    }
+    .loginname{
+        flex-direction: column;
     }
 }

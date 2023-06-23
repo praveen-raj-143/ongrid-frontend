@@ -5,22 +5,20 @@ import Bussiness from './Bussiness/Bussiness'
 import { Link } from 'react-router-dom'
 import Header from './Header/Header'
 import './Home.css'
-// import Hovercomp from './Bussiness/Hover Component/Hovercomp'
-// import Offercomp from './Ourofferings/Hoveroffercomp/Offercomp'
+
 const Home = () => {
+  const isLoggedIn = window.localStorage.getItem("loggedIn")
   return (
     <div>
         <Header/>
         <Whyongrid/>
         <Ourofferings/>
-        {/* <Offercomp/> */}
         <Bussiness/>
-        {/* <Hovercomp/> */}
         <br />
         <br />
         <br />
         <div className='btnstarted'>
-        <Link to='/signin'><button className='btnstar1'>GET STARTED</button></Link>
+        {isLoggedIn ? "" : <Link to='/signin'><button className='btnstar'>GET STARTED</button></Link>}
         </div>
         <br />
         <br />

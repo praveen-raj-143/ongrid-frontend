@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-
+import React, { useState,useEffect } from 'react'
+import './Userdetails.css'
 const Userdetails = () => {
     const [userdata,setUserdata]=useState
     useEffect(()=>{
@@ -15,10 +15,10 @@ const Userdetails = () => {
     .then(res=>res.json())
     // .then(data=> console.log(data))
     .then(data=>setUserdata(data.data))
-      },[])
-      // console.log(userdata.username)
+      })
+       console.log(userdata)
     
-      const isLoggedIn = window.localStorage.getItem("loggedIn")
+      // const isLoggedIn = window.localStorage.getItem("loggedIn")
     
       const logout=()=>{
         window.location.href = "./"
@@ -27,8 +27,9 @@ const Userdetails = () => {
     }
   return (
     <div>
-        <h1>{userdata.name}</h1>
-        <h2></h2>
+        <h1>Name : {userdata.name}</h1>
+        <h1>Email : {userdata.email}</h1>
+        <button onClick={logout}>logout</button>
     </div>
   )
 }
