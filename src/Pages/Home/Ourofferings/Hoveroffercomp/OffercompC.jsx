@@ -5,11 +5,11 @@ const OffercompC = (props) => {
   return (props.catch) ? (
     <div className='offercomp compc'>
         <div className='offercompchild'>
-          <h1 className='offercompchilditem'>Digital, Real-Time or Near Real-Time</h1>
+          <h2 className='offercompchilditem'>eLockr for issuing employment credentials to ex-employees</h2>
           <button className='offercompchilditem offerbtn'><Link className='hoverlinktxt' to='./bookademo'>Book a demo</Link></button>
           <button className='closebtn' onClick={()=>props.setCatch(false)} >X</button>
       </div>
-      <div>
+      <div className='compbtext'>
         <p>eLockr is a free platfrom for employers to issue employment credentials to ex-employees and ex-contractors</p>
         <ul className='offercompchild1'>
             <li className='offercompchild1item'>Empower your ex-employees and ex-contractors by issuing digital employment credentials</li>

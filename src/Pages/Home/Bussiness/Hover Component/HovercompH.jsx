@@ -4,7 +4,7 @@ import './Hovercomp.css'
 const HovercompH = (props) => {
 
   return (props.sanji) ? (
-    <div className='hovercontainer'>
+    <div className='hovercontainer comph'>
             <button onClick={()=>props.setSanji(false)}  className='exitbtn'>X</button>
         <div className='hovertextbox'>
             <h1>Healthcare</h1>

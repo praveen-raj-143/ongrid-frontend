@@ -4,7 +4,7 @@ import './Hovercomp.css'
 const HovercompG = (props) => {
 
   return (props.robbin) ? (
-    <div className='hovercontainer'>
+    <div className='hovercontainer compg'>
             <button onClick={()=>props.setRobbin(false)}  className='exitbtn'>X</button>
         <div className='hovertextbox'>
             <h1>IT/ITes</h1>

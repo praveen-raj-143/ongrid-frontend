@@ -5,11 +5,11 @@ const OffercompB = (props) => {
   return (props.blogger) ? (
     <div className='offercomp compb'>
          <div className='offercompchild'>
-          <h1 className='offercompchilditem'>Digital, Real-Time or Near Real-Time</h1>
-          <button className='offercompchilditem offerbtn'><Link className='hoverlinktxt' to='./bookademo'>Book a demo</Link></button>
+          <h2 className='offercompchilditem'>Gridlines APIs for instant ID verification, KYC and onboarding</h2>
+          <button className='offercompchilditem offerbtnb' style={{ marginLeft:"180px"}}><Link className='hoverlinktxt' to='./bookademo'>Book a demo</Link></button>
           <button className='closebtn' onClick={()=>props.setBlogger(false)} >X</button>
       </div>
-      <div>
+      <div className='compbtext'>
         <p>Integrate Gridlines APIs in your mobile and web applications to instantly onboard users, customers, service providers, staff, merchants, etc.</p>
         <ul className='offercompchild1'>
             <li className='offercompchild1item'>Instant ID verification and KYC APIs (Passport, PAN, Aadhaar, Voter ID, Driving Licence)</li>

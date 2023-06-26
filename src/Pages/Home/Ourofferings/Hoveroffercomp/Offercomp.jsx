@@ -7,7 +7,7 @@ const Offercomp = (props) => {
     <div className='offercomp'>
          <div className='offercompchild'>
           <h1 className='offercompchilditem'>Digital, Real-Time or Near Real-Time</h1>
-          <button className='offercompchilditem offerbtn'><Link className='hoverlinktxt' to='./bookademo'>Book a demo</Link></button>
+          <button className='offercompchilditem offerbtn' style={{ marginLeft:"300px"}}><Link className='hoverlinktxt' to='./bookademo'>Book a demo</Link></button>
           <button className='closebtn' onClick={()=>props.setTrigger(false)} >X</button>
       </div>
       <div  >

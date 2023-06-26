@@ -4,7 +4,7 @@ import './Hovercomp.css'
 const HovercompC = (props) => {
 
   return (props.zoro) ? (
-    <div className='hovercontainer'>
+    <div className='hovercontainer compc'>
             <button onClick={()=>props.setZoro(false)}  className='exitbtn'>X</button>
         <div className='hovertextbox'>
             <h1>Transportation, Logistics, eCommerce</h1>

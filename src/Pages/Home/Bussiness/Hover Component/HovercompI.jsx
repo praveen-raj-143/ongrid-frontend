@@ -4,7 +4,7 @@ import './Hovercomp.css'
 const HovercompI = (props) => {
 
   return (props.franky) ? (
-    <div className='hovercontainer'>
+    <div className='hovercontainer compi'>
             <button onClick={()=>props.setFranky(false)}  className='exitbtn'>X</button>
         <div className='hovertextbox'>
             <h1>Internet Platforms</h1>

@@ -30,7 +30,10 @@
     width: 450px;
     margin: 10px;
 }
-.offerbtn{
+.compbtext{
+    margin: 15px;
+}
+.offerbtnb{
     background-color: aqua;
     border: none;
     color: white;
@@ -38,6 +41,7 @@
     font-size: medium;
     cursor: pointer;
     border-radius: 25px;
+    margin-left: 180px;
 }
 .closebtn{
     height: fit-content;
@@ -48,8 +52,8 @@
     border-radius: 50%;
     padding: 7px 9px 7px 9px;
     position: relative;
-    bottom: -5px;
-    left: -5px;
+    bottom: 15px;
+    left: 15px;
 }
 .hoverlinktxt{
     text-decoration: none;
@@ -75,7 +79,7 @@
     }
     .closebtn{
         position: relative;
-        bottom: -15px;
-        left: -15px;
+        bottom: -5px;
+        left: -5px;
     }
 }
