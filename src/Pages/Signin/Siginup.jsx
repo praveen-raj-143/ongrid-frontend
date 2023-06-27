@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
+import {useNavigate} from 'react-router-dom'
 import './Signin.css'
 const Siginup = () => {
+  const navigate=useNavigate()
     const [username, setUsername]=useState("")
     const [age,setAge]=useState("")
     const [companyname,setCompanyname]=useState("")
@@ -22,7 +24,8 @@ const Siginup = () => {
     .then(data=>{
       if(data.status==="ok"){
         alert("signedUP successfully")
-        window.location.href = "./signin"
+        // window.location.href = "./signin"
+        navigate('/signin')
       }else{
         alert("invalid credentails please try again")
       }
